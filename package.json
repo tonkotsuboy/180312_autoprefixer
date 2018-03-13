@@ -1,0 +1,25 @@
+{
+  "name": "180312_autoprefixer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://tonkotsuboy_com@github.com/tonkotsuboy/180312_autoprefixer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonkotsuboy/180312_autoprefixer/issues"
+  },
+  "homepage": "https://github.com/tonkotsuboy/180312_autoprefixer#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

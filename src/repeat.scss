@@ -1,0 +1,38 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  /* 6列。100vw/6の幅を6回繰り返す */
+  grid-template-columns: repeat(6, calc(100vw / 6));
+  /* 4行。100pxの高さを4回繰り返す */
+  grid-template-rows: repeat(4, calc(80vh / 4));
+
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+
+  > div {
+    font-size: calc(100vw / 6);
+  }
+}
+
+@for $i from 1 through 4 {
+  @for $j from 1 through 6 {
+    div:nth-child(#{6 * $i - 1 + $j}) {
+      grid-column: $j;
+      grid-row: $i;
+    }
+  }
+}
